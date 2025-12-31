@@ -41,6 +41,8 @@ while True:
             result = "".join(command)
             process(result)
             command=[]
+        elif buff.decode()=='\x08':
+            command.pop()
         else:
             uart.write(buff.decode())
             command.append(buff.decode())
