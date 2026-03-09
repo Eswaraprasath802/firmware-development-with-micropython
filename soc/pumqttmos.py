@@ -2,7 +2,8 @@ import paho.mqtt.client as mqtt
 import time
 import random
 
-PI_IP = "192.168.1.45"   # Raspberry Pi IP address
+PI_IP = "192.168.1.45"   # Raspberry Pi IP address 
+# if the mosquito is installed in the publisher you can simply use localhost
 
 client = mqtt.Client()
 
